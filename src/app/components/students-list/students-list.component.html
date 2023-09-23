@@ -1,0 +1,25 @@
+<div class="table-responsive">
+  <h2>Applicants for Software Engineering Program</h2>
+  <table class="table">
+    <thead>
+      <tr class="table-light">
+        <th scope="col">Code</th>
+        <th scope="col">Firstname</th>
+        <th scope="col">Lastname</th>
+        <th scope="col">Birthdate</th>
+        <th scope="col">Score</th>
+        <th scope="col">Observation</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let student of students;">
+      <tr  [appHighlightRow]="student.score >= 900">
+        <th scope="row">{{student.code}}</th>
+        <td class="text-nowrap">{{student.firstname}}</td>  
+        <td class="text-nowrap">{{student.lastname}}</td>
+        <td class="text-nowrap">{{student.birthdate | date}}</td>
+        <td class="text-nowrap">{{student.score}}</td>
+        <td class="text-nowrap" ><span *ngIf="student.score >= 900">Acceptance</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
