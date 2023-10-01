@@ -1,0 +1,67 @@
+{
+  "sudamerica": [
+    {
+      "pais": "Argentina",
+      "ciudades": [
+        "Buenos Aires",
+        "Córdoba",
+        "Rosario",
+        "Mendoza"
+      ]
+    },
+    {
+      "pais": "Brasil",
+      "ciudades": [
+        "Sao Paulo",
+        "Río de Janeiro",
+        "Salvador",
+        "Brasilia"
+      ]
+    },
+    {
+      "pais": "Chile",
+      "ciudades": [
+        "Santiago",
+        "Valparaíso",
+        "Concepción",
+        "Antofagasta"
+      ]
+    },
+    {
+      "pais": "Colombia",
+      "ciudades": [
+        "Bogotá",
+        "Medellín",
+        "Cali",
+        "Barranquilla"
+      ]
+    },
+    {
+      "pais": "Ecuador",
+      "ciudades": [
+        "Quito",
+        "Guayaquil",
+        "Cuenca",
+        "Machala"
+      ]
+    },
+    {
+      "pais": "Perú",
+      "ciudades": [
+        "Lima",
+        "Arequipa",
+        "Trujillo",
+        "Cusco"
+      ]
+    },
+    {
+      "pais": "Venezuela",
+      "ciudades": [
+        "Caracas",
+        "Maracaibo",
+        "Valencia",
+        "Barquisimeto"
+      ]
+    }
+  ]
+}
