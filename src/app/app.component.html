@@ -1,1 +1,36 @@
-<p>app.component.html</p>
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+  <h2>Observable from a promise: Pipes async</h2>
+  <div class="row">
+    <div *ngFor="let character of data$ | async" class="card mb-3 col-md-3 col-sm-6" style="max-width: 18rem;">
+      <img src="{{ character.image }}" class="card-img-top" alt="{{ character.name }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ character.name }}</h5>
+        <p class="card-text">
+          Status: {{ character.status }}<br>
+          Species: {{ character.species }}<br>
+          Location: {{ character.location.name }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <h2>Operators: filter</h2>
+  <div class="row">
+    <div class="card mb-3 col-md-3 col-sm-6" style="max-width: 18rem;">
+      <img src="{{ dataFiltered.image }}" class="card-img-top" alt="{{ dataFiltered.name }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ dataFiltered.name }}</h5>
+        <p class="card-text">
+          Status: {{ dataFiltered.status }}<br>
+          Species: {{ dataFiltered.species }}<br>
+          Location: {{ dataFiltered.location.name }}
+        </p>
+      </div>
+    </div>
+    <h4>Información de entrada:</h4>
+    <pre>{{ dataUnfiltered | json }}</pre>
+    <h4>Información de salida:</h4>
+    <pre>{{ dataFiltered | json }}</pre>
+  </div>
+</div>
